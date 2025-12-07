@@ -1,0 +1,61 @@
+prefix: "<gradient:#ff9a9e:#fecfef>[HeartBeat] </gradient>"
+
+# --- 基础提示 ---
+cmd-no-partner: "<gray>你还没有伴侣。快去送花表白，或者用 <green>/love invite <player> <gray>求婚！"
+cmd-invite-sent: "<green>求婚请求已发送给 {player}！"
+cmd-invite-received: "<#ff9a9e>{player} <gray>向你求婚了！输入 <green>/love accept <gray>同意。"
+cmd-married: "<gradient:red:gold><b>恭喜！{p1} 和 {p2} 正式结为伴侣！</b></gradient>"
+cmd-teleporting: "<green>正在传送到爱人身边... 请勿移动。"
+cmd-teleport-success: "<green>传送成功！"
+cmd-cooldown: "<red>你们太腻歪了，歇一会吧！"
+
+# --- 交互动作 (随机消息) ---
+action-kiss:
+  - "<#ff9a9e>你深情地吻了 {partner}！(HP +2)"
+  - "<#ff9a9e>{partner} 的脸红了... 好感度上升！"
+  - "<#ff9a9e>空气中充满了粉红色的泡泡。"
+  
+action-hug:
+  - "<yellow>你紧紧抱住了 {partner}。"
+  - "<yellow>感受彼此的体温..."
+  - "<yellow>充电中... 电量 100%。"
+
+action-pat:
+  - "<aqua>你摸了摸 {partner} 的头：'乖~'"
+  - "<aqua>{partner} 像小猫一样蹭了蹭你的手。"
+
+action-slap:
+  - "<red><b>啪！</b> 你给了 {partner} 一个响亮的耳光！"
+  - "<red><b>啪！</b> {partner} 被你打懵了！好感度大幅下降！"
+  - "<red>正在进行物理交流..."
+
+# --- 危机与吃醋 ---
+jealousy-trigger:
+  - "<dark_red><b>[吃醋]</b> 你的伴侣 {partner} 正在对别人动手动脚！"
+  - "<dark_red><b>[警告]</b> {partner} 似乎对其他人很感兴趣..."
+  - "<dark_red>如果你再不看紧点，头上就要长草了。"
+
+decay-warn:
+  - "<gray>你们已经很久没互动了，感情正在变淡..."
+
+# --- 联动 DigestiveSystem ---
+poop-gift:
+  - "<dark_red>你竟然送了屎给 {partner}？！你疯了吗？"
+  - "<dark_red>{partner} 吐了一地，并考虑和你分手。"
+  - "<dark_red>这就是你所谓的浪漫？好感度清零警告！"
+
+# --- 阶段达成 ---
+stage-up: "<gradient:gold:yellow><b>恭喜！你们的关系升华为【{stage}】！解锁更多特权！</b></gradient>"
+stage-names:
+  stranger: "路人"
+  crush: "暧昧"
+  lover: "恋人"
+  engaged: "订婚"
+  married: "伴侣"
+
+# --- GUI ---
+gui-stats: "<gold>当前关系: <yellow>{stage}"
+gui-affection: "<#ff9a9e>好感度: {amount}"
+gui-tp: "<green>传送至伴侣"
+gui-home: "<aqua>设置爱的小屋"
+gui-divorce: "<dark_red>申请离婚"
