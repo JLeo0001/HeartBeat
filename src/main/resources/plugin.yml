@@ -1,0 +1,11 @@
+name: HeartBeat
+version: '1.0.0'
+main: com.example.heartbeat.HeartBeat
+api-version: '1.21'
+commands:
+  love:
+    description: 恋爱系统主命令
+    aliases: [marry]
+permissions:
+  heartbeat.use:
+    default: true
