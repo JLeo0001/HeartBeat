@@ -1,0 +1,63 @@
+# =============================================================
+#        ❤️ HeartBeat (心动时刻) - 完整配置
+# =============================================================
+
+settings:
+  save-interval: 300       # 数据自动保存间隔(秒)
+  language: zh_cn          # 语言文件
+  daily-affection-cap: 500 # 每天好感度获取上限
+  interact-distance: 3.0   # 交互动作的距离限制
+  teleport-warmup: 3       # 传送等待时间(秒)
+
+# --- 💖 关系阶段 (达到多少分升级) ---
+stages:
+  stranger: 0
+  crush: 100       # 暧昧期 (解锁抱抱)
+  lover: 500       # 热恋期 (解锁接吻/摸头)
+  engaged: 1500    # 订婚 (解锁传送)
+  married: 3000    # 伴侣 (解锁所有RPG特权)
+
+# --- 🎚️ 功能开关 (Features) ---
+features:
+  # [动作交互]
+  enable-gift: true          # Shift+右键送礼
+  enable-kiss: true          # 贴贴/接吻
+  enable-hug: true           # 拥抱
+  enable-pat: true           # 摸头
+  enable-slap: true          # 扇耳光 (好感低时触发)
+  
+  # [RPG特权]
+  enable-pvp-protect: true   # 伴侣互相无伤害
+  enable-life-link: true     # 伤害分担 (一人挨打两人痛)
+  enable-exp-share: true     # 经验共享 (打怪经验分给对方)
+  enable-guardian: true      # 守护天使 (伴侣残血你获得加速)
+  enable-avenger: true       # 复仇者 (对杀害伴侣的凶手增伤)
+  
+  # [便利功能]
+  enable-chat-channel: true  # 私密频道 (!开头)
+  enable-teleport: true      # 传送 (/love tp)
+  enable-sathome: true       # 双人С家 (/love home)
+  
+  # [危机与整活]
+  enable-jealousy: true      # 吃醋系统 (对别人做动作扣分)
+  enable-decay: true         # 七年之痒 (长时间不互动扣分)
+  enable-poop-attack: true   # 屎味攻击 (送屎扣大分)
+
+# --- 🔢 数值平衡 ---
+values:
+  # 加分项
+  gift-flower: 20.0        # 送花
+  gift-diamond: 100.0      # 送钻石
+  kiss-gain: 5.0           # 接吻
+  hug-gain: 2.0            # 拥抱
+  pat-gain: 1.0            # 摸头
+  
+  # 扣分项
+  slap-penalty: -10.0      # 扇耳光
+  jealousy-penalty: -50.0  # 吃醋
+  poop-penalty: -500.0     # 送屎惩罚
+  decay-per-hour: 5.0      # 每小时自然衰减
+
+# --- ⚙️ 界面设置 ---
+gui:
+  title: "<black>我们的关系"
